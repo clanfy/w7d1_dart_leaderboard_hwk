@@ -24,5 +24,12 @@ public class Player {
         return this.nickname;
     }
 
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setNickname(String nickname){
+        this.nickname = nickname;
+    }
 
 }
