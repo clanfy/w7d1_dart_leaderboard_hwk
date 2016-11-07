@@ -15,7 +15,7 @@ public class PlayerTest {
 
         @Before
         public void before(){
-            player1 = new Player("Martin Lanfear", "No Fear Lanfear");
+            player1 = new Player("Martin Lanfear", "No Fear Lanfear", 1);
         }
 
         @Test
@@ -34,6 +34,11 @@ public class PlayerTest {
         public void testCanSetNickname(){
             player1.setNickname("No Pants Lanfear");
             assertEquals("No Pants Lanfear", player1.getNickname());
+        }
+
+        @Test
+        public void testCanGetRanking(){
+            assertEquals(1, player1.getRanking());
         }
 
     }

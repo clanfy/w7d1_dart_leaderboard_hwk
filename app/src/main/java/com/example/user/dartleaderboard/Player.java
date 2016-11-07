@@ -10,10 +10,10 @@ public class Player {
     private String nickname;
     protected int ranking;
 
-    public Player(String name, String nickname){
+    public Player(String name, String nickname, int ranking){
         this.name = name;
         this.nickname = nickname;
-        this.ranking = 1;
+        this.ranking = ranking;
     }
 
     public String getName(){
@@ -30,6 +30,10 @@ public class Player {
 
     public void setNickname(String nickname){
         this.nickname = nickname;
+    }
+
+    public int getRanking(){
+        return this.ranking;
     }
 
 }
