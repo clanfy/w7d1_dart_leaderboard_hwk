@@ -40,4 +40,9 @@ public class Player {
         this.ranking = rank;
     }
 
+    @Override
+    public String toString(){
+        return "Player: " + name + ", Nickname: " + nickname + ", Ranking: " + ranking;
+    }
+
 }

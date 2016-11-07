@@ -15,13 +15,13 @@ public class PlayerTest {
 
         @Before
         public void before(){
-            player1 = new Player("Martin Lanfear", "No Fear Lanfear", 1);
+            player1 = new Player("Martin Lanfear", "'No Fear Lanfear'", 1);
         }
 
         @Test
         public void testPlayerSetUp(){
             assertEquals("Martin Lanfear", player1.getName());
-            assertEquals("No Fear Lanfear", player1.getNickname());
+            assertEquals("'No Fear Lanfear'", player1.getNickname());
         }
 
         @Test
@@ -32,8 +32,8 @@ public class PlayerTest {
 
         @Test
         public void testCanSetNickname(){
-            player1.setNickname("No Pants Lanfear");
-            assertEquals("No Pants Lanfear", player1.getNickname());
+            player1.setNickname("'No Pants Lanfear'");
+            assertEquals("'No Pants Lanfear'", player1.getNickname());
         }
 
         @Test
@@ -45,6 +45,11 @@ public class PlayerTest {
         public void testCanSetRanking(){
             player1.setRanking(3);
             assertEquals(3, player1.getRanking());
+        }
+
+        @Test
+        public void testCanGetToString(){
+            assertEquals("Player: Martin Lanfear, Nickname: 'No Fear Lanfear', Ranking: 1", player1.toString());
         }
 
     }
