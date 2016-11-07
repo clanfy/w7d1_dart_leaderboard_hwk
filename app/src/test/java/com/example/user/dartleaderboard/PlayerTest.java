@@ -41,6 +41,12 @@ public class PlayerTest {
             assertEquals(1, player1.getRanking());
         }
 
+        @Test
+        public void testCanSetRanking(){
+            player1.setRanking(3);
+            assertEquals(3, player1.getRanking());
+        }
+
     }
 
 

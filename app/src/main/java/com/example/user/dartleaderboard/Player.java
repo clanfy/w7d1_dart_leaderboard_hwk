@@ -36,4 +36,8 @@ public class Player {
         return this.ranking;
     }
 
+    public void setRanking(int rank){
+        this.ranking = rank;
+    }
+
 }
