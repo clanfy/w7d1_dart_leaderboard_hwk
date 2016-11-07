@@ -10,15 +10,15 @@ import java.util.ArrayList;
 public class Rankings {
 
 
-    protected ArrayList<Player> mRankings;
+    protected Player[] mRankings;
 
     public Rankings(){
-        mRankings = new ArrayList<Player>();
+        this.mRankings = new Player[2];
         setUpRankings();
     }
 
-    public Rankings(ArrayList<Player> existingPlayers){
-        mRankings = new ArrayList<Player>(existingPlayers);
+    public Rankings(Player[] existingPlayers){
+        mRankings = new Player[](existingPlayers);
     }
 
     private void setUpRankings(){
